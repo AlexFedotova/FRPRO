@@ -1,0 +1,8 @@
+let astronomicalObject = new Map([
+    ["Earth", "planet"],
+    ["Moon", "satellite"],
+    ["Sun", "star"]
+]);
+astronomicalObject.forEach((value, key) => {
+    console.log(`${key} - x = ${value} - y`);
+});
