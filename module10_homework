@@ -1,1 +1,99 @@
+//задание 1//
 
+let result=promt("введите значение");
+ result = + result;
+if (typeof  result !== "number")  {
+  alert ("упс, кажется вы ошиблись")
+}
+  else if (NaN (result % 2)) {
+      console.log ("ошибка")
+}
+  else if (result  % 2 ===0) {
+        console.log ("четное")
+}
+  else {
+         console.log ("нечетное")
+}
+
+//задание 2//
+let x
+if(typeof(x)=== 'string') {
+    console.log("x строка");
+}
+else if (typeof (x)=== 'boolean') {
+    console.log("x лог значение");
+}
+else if (typeof (x)=== 'number') {
+    console.log("x число");
+}
+else {
+  console.log("Тип x не определен");
+}
+
+//задание 3//
+let reverse = a => a.split('')
+                    .reverse()
+                    .join('');
+
+console.log(reverse('Hello'))
+
+//задание 4//
+console.log(Math.floor(Math.random() * 101));
+
+//задание 5//
+const nums= [1, 2, 3, 4, 1, 2, 3];
+nums.forEach((nums) => console.log(nums));
+
+// еще есть такой вариант этого задания//
+const arr= [1, 2, 3, 4, 1, 2, 3];
+console.log(arr[0]);
+console.log(arr[1]);
+console.log(arr[2]);
+console.log(arr[3]);
+console.log(arr[4]);
+console.log(arr.length);
+
+//задание 6//
+const arr = [0, 2, 0, 6]
+
+for (let i = 0; i < arr.length; i++) {
+
+  if (arr[i] != arr[0]){
+    console.log(false);
+  }
+    else {
+    let a = arr[i] == arr[0];
+    console.log(a);
+  }
+}
+//задание 7//
+
+let arr = [0, 2, null, 0.5,undefined, 123];
+let countEvenNumber = 0;
+let countOddNumber = 0;
+let countOther = 0;
+
+for (let i = 0; i < arr.length; i++){
+    if ((arr[i] === 0) || (typeof(arr[i]) != 'number')) {
+        countOther++;
+    } else {
+        if (arr[i] % 2 === 0) {
+            countEvenNumber++;
+        } else {
+            countOddNumber++;
+        }
+    }
+}
+console.log("Even is " + countEvenNumber);
+console.log("Odd is " + countOddNumber);
+console.log("Other is " + countOther);
+
+//Задание 8//
+let astronomicalObject = new Map([
+    ["Earth", "planet"],
+    ["Moon", "satellite"],
+    ["Sun", "star"]
+]);
+astronomicalObject.forEach((value, key) => {
+    console.log(`${key} - x = ${value} - y`);
+});
